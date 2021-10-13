@@ -22,7 +22,7 @@ from utils.plots import plot_one_box
 from utils.torch_utils import select_device, load_classifier, time_synchronized
 
 
-opt = Namespace(weights=['runs/train/yolov5m_results3/weights/last.pt'], source='images/ims', img_size=416, conf_thres=0.4, iou_thres=0.45, device='', view_img=False, 
+opt = Namespace(weights=['runs/train/yolov5m_results3/weights/last.pt'], source='images/ims/', img_size=416, conf_thres=0.4, iou_thres=0.45, device='', view_img=False, 
         save_txt=True, save_conf=False, classes=None, agnostic_nms=False, augment=False, 
         update=False, project='runs/detect', name='exp', exist_ok=False)
 
@@ -61,9 +61,9 @@ class Checker():
             print('_________________________________________________________________________________________________\n')
             bot.send_message('488664136', 'preconnecting error, restart')
             bot.send_message('293125099', 'preconnecting error, restart')
-            #os.system('pkill firefox')
+            os.system('pkill firefox')
             time.sleep(0.5)
-            os.system('python restart.py')
+            os.system('python3 restart.py')
             time.sleep(0.5)
             sys.exit()
 
@@ -107,9 +107,9 @@ class Checker():
             print('_________________________________________________________________________________________________\n')
             bot.send_message('488664136', 'cycle error, restart')
             bot.send_message('293125099', 'cycle error, restart')
-            #os.system('pkill firefox')
+            os.system('pkill firefox')
             time.sleep(0.5)
-            os.system('python restart.py')
+            os.system('python3 restart.py')
             time.sleep(0.5)
             sys.exit()
                 
