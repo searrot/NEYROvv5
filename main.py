@@ -27,7 +27,7 @@ opt = Namespace(weights=['runs/train/yolov5m_results3/weights/last.pt'], source=
         update=False, project='runs/detect', name='exp', exist_ok=False)
 
 #pytesseract.pytesseract.tesseract_cmd = 'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'
-bot = telebot.TeleBot(token="2093939359:AAHv8RfZfKmRzAxTfVVPd09PEpBVhpRceHU")
+bot = telebot.TeleBot(token="1993230425:AAEqbDCNCDGDcAJ00w1nBmk9loenYbMRcbc")
 link = 'https://twitter.com/IKudryavtzeff'
 xpath = '//article[@data-testid="tweet"]'
 image_path = './images/ims/'
