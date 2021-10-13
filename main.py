@@ -1,5 +1,3 @@
-from tensorflow.keras.models import load_model
-from tensorflow.keras.preprocessing import image_dataset_from_directory
 import myparser
 import cv2
 import pytesseract 
