@@ -23,7 +23,10 @@ except Exception as e:
 
 while True:
     try:
-        data = conn.recv(1024).decode('latin-1')
+        try:
+            data = conn.recv(1024).decode('latin-1')
+        except:
+            data = conn.recv(1024).decode('utf-8')
         if not data:
             admin_bot.send_message(RUSLAN_ID, 'Cryptobot:Ошибка получения запроса от сервера, пустой запрос')
             admin_bot.send_message(IVAN_ID, 'Cryptobot:Ошибка получения запроса от сервера, пустой запрос')
